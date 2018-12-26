@@ -21,7 +21,7 @@ public class PhotoAdapter extends
 
     private Context context;
 
-    protected PhotoAdapter(Context context) {
+    public PhotoAdapter(Context context) {
         super(DIFF_CALLBACK);
         this.context = context;
     }
@@ -39,7 +39,7 @@ public class PhotoAdapter extends
         Photo photo = getItem(position);
 
         if (photo != null) {
-            holder.title.setText(photo.getTitle());
+            holder.title.setText(String.valueOf(photo.getId()));
             Glide.with(context).load(photo.getUrl())
                     .into(holder.image);
         }

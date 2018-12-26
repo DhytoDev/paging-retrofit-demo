@@ -6,11 +6,10 @@ import com.dhytodev.pagingwithretrofitdemo.data.source.PhotoDataSourceFactory;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 import androidx.paging.LivePagedListBuilder;
-import androidx.paging.PageKeyedDataSource;
 import androidx.paging.PagedList;
 
 public class PhotoViewModel extends ViewModel {
-    LiveData<PagedList<Photo>> photoPagedList ;
+    public LiveData<PagedList<Photo>> photoPagedList ;
 
     public PhotoViewModel() {
         PhotoDataSourceFactory photoDataSourceFactory =
