@@ -1,7 +1,9 @@
-package com.dhytodev.pagingwithretrofitdemo;
+package com.dhytodev.pagingwithretrofitdemo.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.dhytodev.pagingwithretrofitdemo.R;
 
 public class MainActivity extends AppCompatActivity {
 
